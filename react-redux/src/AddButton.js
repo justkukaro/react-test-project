@@ -18,10 +18,6 @@ let mapDispatchToProps = (dispatch, /*ownProps*/) => {
     };
 };
 
-AddButton = connect(null, mapDispatchToProps, (stateProps, dispatchProps, ownProps) => {
-    return {
-        addNumber: () => dispatchProps.addNumber()
-    };
-})(AddButton);
+AddButton = connect(null, mapDispatchToProps)(AddButton);
 
 export default AddButton;

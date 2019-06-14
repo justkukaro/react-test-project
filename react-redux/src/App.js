@@ -22,6 +22,13 @@ let mapStateToProps = (state, /*ownProps*/) => {
     };
 };
 
-App = connect(mapStateToProps)(App);
+App = connect(mapStateToProps, null,
+    // (stateProps, dispatchProps, ownProps) => {
+    //     console.log(stateProps, dispatchProps, ownProps);
+    //     return {
+    //         number: stateProps.number + 10
+    //     };
+    // }
+)(App);
 
 export default App;

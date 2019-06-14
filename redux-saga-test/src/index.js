@@ -3,11 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
-import {createStore} from 'redux';
 import {Provider} from 'react-redux'
-import reducers from './reducers';
+import saga from './saga'
+import {configureStore} from './store'
 
-const store = createStore(reducers);
+const store = configureStore();
+store.runSaga(saga);
 
 const render = () => {
     ReactDOM.render(

@@ -1,4 +1,4 @@
-// AddButton.js
+// BedButton.js
 import React, {Component} from 'react';
 import {add} from './actions'
 

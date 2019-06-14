@@ -1,8 +1,7 @@
 // App.js
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import AddButton from './AddButton'
-import SubButton from './SubButton'
+import BedButton from './BedButton'
 
 class App extends Component {
 
@@ -10,7 +9,7 @@ class App extends Component {
         return (
             <div className="App">
                 <span>{this.props.number}</span><br/>
-                <AddButton/><SubButton/>
+                <BedButton/>
             </div>
         );
     }
